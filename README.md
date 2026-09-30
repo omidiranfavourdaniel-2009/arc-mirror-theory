@@ -48,7 +48,7 @@ Live demo: _https://arc-mirror-theory.netlify.app_
 
 - `arc_mirror_omega.py` — generator, validation, G-code, STL
 - `index.html` — interactive dashboard
-- `ArcMirror_200mm_F300_f1.5_32arcs_Adaptive_Left_sample.nc` — example G-code
+- `sample_gcode.nc` — example G-code
 - `requirements.txt` — numpy
 - `LICENSE`
 
