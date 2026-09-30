@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: "Omidiran"
+    given-names: "Favour Daniel"
+    affiliation: "Federal University of Petroleum Resources Effurun (FUPRE)"
+title: "Arc-Mirror Theory: Computational Implementation"
+version: "1.0.0"
+date-released: "2026-09-30"
+url: "https://github.com/omidiranfavourdaniel-2009/arc-mirror-theory"
+license: "SEE LICENSE FILE"
+preferred-citation:
+  type: software
+  title: "Arc-Mirror Theory: Computational Implementation"
+  authors:
+    - family-names: "Omidiran"
+      given-names: "Favour Daniel"
+  year: 2026
+  url: "https://github.com/omidiranfavourdaniel-2009/arc-mirror-theory"
