@@ -40,7 +40,7 @@ That run validates the construction, prints the four family members, and writes 
 
 Open `index.html` in a browser for the dashboard.
 
-Live demo: _(add your GitHub Pages or Netlify link)_
+Live demo: _https://arc-mirror-theory.netlify.app_
 
 ---
 
