@@ -66,7 +66,7 @@ Preprint: _https://doi.org/10.5281/zenodo.22690971_
 
 | Item | State |
 |---|---|
-| Construction + error analysis | written (kept private) |
+| Construction + error analysis | written |
 | Simulator, G-code, STL | this repo |
 | Measured prototype | not yet |
 
