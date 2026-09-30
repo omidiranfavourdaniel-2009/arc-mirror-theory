@@ -25,8 +25,6 @@ Two independent choices:
 
 Default demo: **adaptive + left-endpoint**.
 
-The journal is private. Do not upload it here.
-
 ---
 
 ## Quick start
