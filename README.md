@@ -42,6 +42,8 @@ Open `index.html` in a browser for the dashboard.
 
 Live demo: _https://arc-mirror-theory.netlify.app_
 
+Preprint: _https://doi.org/10.5281/zenodo.22690971_
+
 ---
 
 ## Files
