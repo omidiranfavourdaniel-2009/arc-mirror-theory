@@ -1,0 +1,12 @@
+{
+  "design": "2m_f3m_adaptive_midpoint_98",
+  "headline_surface_error_nm": 15.94,
+  "headline_slope_error_mrad": 0.01215,
+  "headline_ray_spot_mm": 28,
+  "receiver_power_estimate_kW": [
+    2.1,
+    2.6
+  ],
+  "physical_validation_status": "not yet built/measured",
+  "generator_source": "supplied arc_mirror_omega.py computational implementation"
+}

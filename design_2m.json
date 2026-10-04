@@ -1,0 +1,20 @@
+{
+  "aperture_diameter_mm": 2000,
+  "focal_length_mm": 3000,
+  "segmentation": "adaptive",
+  "matching": "midpoint",
+  "rings": 98,
+  "surface_error_nm": 15.94,
+  "slope_error_mrad": 0.01215,
+  "solar_irradiance_W_m2": 900,
+  "optical_efficiency_range": [
+    0.75,
+    0.92
+  ],
+  "estimated_receiver_power_kW": [
+    2.1,
+    2.6
+  ],
+  "ray_trace_95pct_spot_mm": 28,
+  "status": "simulation / estimate; physical dish not yet built"
+}

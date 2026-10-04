@@ -1,0 +1,37 @@
+## ring_calculator.py
+Arc-Mirror ring calculator / numerical verification
+D = 2000 mm, f = 3000 mm, f/D = 1.50
+Targets: <= 16 nm surface error, <= 0.039 mrad slope error
+
+uniform-left         380 rings    15.990 nm    0.01217 mrad
+uniform-midpoint     190 rings    15.990 nm    0.01217 mrad
+adaptive-left        194 rings    15.992 nm    0.01217 mrad
+adaptive-midpoint     98 rings    15.941 nm    0.01215 mrad
+
+Transition check
+97 adaptive-midpoint: 16.277 nm, 0.01228 mrad  -> fails 16 nm
+98 adaptive-midpoint: 15.941 nm, 0.01215 mrad  -> passes 16 nm
+
+## validation/run_validation.py
+Arc-Mirror repository validation
+97 adaptive-midpoint : 16.277 nm, 0.01228 mrad
+98 adaptive-midpoint : 15.941 nm, 0.01215 mrad
+190 uniform-midpoint: 15.990 nm, 0.01217 mrad
+PASS: audited 2 m headline result reproduced.
+
+## ray_trace.py
+Arc-Mirror Monte-Carlo ray trace
+Design: D=2000 mm, f=3000 mm, 98 adaptive-midpoint rings
+Rays: 5000
+RMS radius: 10.169 mm
+95% focal-spot diameter: 27.948 mm
+Maximum radius: 15.108 mm
+Status: simulation only; no physical focal-spot measurement.
+
+## thermal_expansion_worstcase.py
+Arc-Mirror thermal sensitivity reference
+Diameter: 2.0 m
+Aluminium free-expansion scale per kelvin: 47.20 micrometres/K
+Optical baseline slope error: 0.01215 mrad
+Model status: first-order sensitivity analysis; not experimental validation.
+Dominant physical validation risks: thermal drift, thin-shell flex, machining accuracy and gravity/wind deflection.
