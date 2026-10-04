@@ -83,7 +83,7 @@ For the interactive browser demonstration, open `index.html` if it is included i
 
 ## What is in the repository
 
-- `generator/arc_mirror_omega.py` — Arc-Mirror construction, validation, G-code generation, and STL export.
+- `arc_mirror_generator.py` — Arc-Mirror construction, validation, G-code generation, and STL export.
 - `ring_calculator.py` — ring-count/error calculation entry point.
 - `ray_trace.py` — optical validation/reference entry point.
 - `thermal_expansion_worstcase.py` — first-order thermal-expansion sensitivity entry point.
