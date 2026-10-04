@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+title: "Arc-Mirror"
+message: "If you use this software or computational results, please cite this repository."
+type: software
+authors:
+  - family-names: "Omidiran"
+    given-names: "Favour Daniel"
+    affiliation: "Federal University of Petroleum Resources, Effurun (FUPRE), Nigeria"
+repository-code: "https://github.com/omidiranfavourdaniel-2009/arc-mirror-theory"
+abstract: >-
+  Computational tools for Arc-Mirror reflector geometry, adaptive circular-arc
+  segmentation, CNC G02/G03 toolpath generation, optical ray tracing, and
+  first-order thermal-expansion sensitivity analysis. The repository supports
+  the 2 m, f/D = 1.5 solar-dish case study developed for the IAS Global Energy
+  Hackathon 2026.
+keywords:
+  - Arc-Mirror
+  - solar thermal
+  - parabolic reflector
+  - concentrated solar power
+  - circular arc approximation
+  - CNC
+  - ray tracing
+  - thermal analysis
+license: MIT
+version: 1.0.0
+date-released: 2026-10-04
