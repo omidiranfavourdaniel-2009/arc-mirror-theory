@@ -31,7 +31,7 @@ The adaptive midpoint construction is the selected 2 m case in the current techn
 
 ## Current 2 m design case
 
-The repository supports the **2 m aperture, f = 3 m (f/D = 1.5)** solar-dish case used in the IAS Global Energy Hackathon 2026 technical work.
+The repository supports the **2 m aperture, f = 3 m (f/D = 1.5)** solar-dish case used.
 
 | Quantity | Current result/status |
 |---|---|
@@ -43,12 +43,12 @@ The repository supports the **2 m aperture, f = 3 m (f/D = 1.5)** solar-dish cas
 | Maximum commanded slope error | 0.01215 mrad |
 | Aperture area | 3.142 m² |
 | Estimated receiver power | 2.1–2.6 kW* |
-| 95% focal-spot diameter | ~28 mm† |
+| 95% focal-spot diameter | ~28 mm |
 | Physical 2 m dish | not yet built/measured |
 
 \* Estimate from 900 W/m² direct irradiance and a stated 75–92% optical-efficiency assumption; it is not measured receiver output.
 
-† Monte Carlo ray-trace result for the commanded geometry; it is a simulation result, not a measured focal spot.
+Monte Carlo ray-trace result for the commanded geometry; it is a simulation result, not a measured focal spot.
 
 The 98-ring result is a **numerically verified commanded geometry**, not a claim about the accuracy of a finished machined optic.
 
@@ -87,7 +87,7 @@ For the interactive browser demonstration, open `index.html` if it is included i
 - `ring_calculator.py` — ring-count/error calculation entry point.
 - `ray_trace.py` — optical validation/reference entry point.
 - `thermal_expansion_worstcase.py` — first-order thermal-expansion sensitivity entry point.
-- `index.html` — interactive dashboard, when included.
+- `index.html` — interactive dashboard.
 - `requirements.txt` — Python dependencies.
 - `LICENSE.txt` — software license.
 
