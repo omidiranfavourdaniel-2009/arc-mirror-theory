@@ -60,13 +60,13 @@ Create a Python environment, install the dependencies, then run the supplied gen
 
 ```bash
 pip install -r requirements.txt
-python generator/arc_mirror_omega.py
+python arc_mirror_generator.py
 ```
 
 Run the repository validation:
 
 ```bash
-python validation/run_validation.py
+python run_validation.py
 ```
 
 Other entry points:
@@ -87,9 +87,6 @@ For the interactive browser demonstration, open `index.html` if it is included i
 - `ring_calculator.py` — ring-count/error calculation entry point.
 - `ray_trace.py` — optical validation/reference entry point.
 - `thermal_expansion_worstcase.py` — first-order thermal-expansion sensitivity entry point.
-- `validation/` — reproducibility checks for the repository.
-- `examples/` — design parameters and reproducibility metadata.
-- `results/` — notes describing the status of computational results.
 - `index.html` — interactive dashboard, when included.
 - `requirements.txt` — Python dependencies.
 - `LICENSE.txt` — software license.
