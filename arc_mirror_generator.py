@@ -258,8 +258,8 @@ class ArcMirror:
             return np.linspace(0.0, self.max_r, self.n_rings + 1)
 
         # Adaptive: equidistribute sqrt(Delta kappa) (Theorem 6)
-        n_fine = 10_000
-        r_fine = np.linspace(1e-6, self.max_r, n_fine)
+        n_fine = 40_001
+        r_fine = np.linspace(0.0, self.max_r, n_fine)
         f = self.focal_length
 
         # Curvature mismatch (Theorem 2)
@@ -356,7 +356,7 @@ class ArcMirror:
             bound_ray_arcmin = None
             # Leading-order adaptive proxy using the regularised density
             # actually used for the nodes: proxy_h = S_reg^2 / (2 n^2).
-            r_f = np.linspace(0.0, self.max_r, 20_001)
+            r_f = np.linspace(0.0, self.max_r, 40_001)
             dk = r_f ** 2 / (4.0 * f ** 2 + r_f ** 2) ** 1.5
             S_reg = np.trapezoid(np.sqrt(dk + self.reg_eps), r_f)
             bound_h_adaptive_nm = float(S_reg ** 2 / (2.0 * n ** 2) * 1e6)
@@ -1063,17 +1063,17 @@ class ArcMirror:
 
 if __name__ == "__main__":
     # OMEGA FAMILY DEMONSTRATION
-    # The canonical published construction remains adaptive-left.
+    # The default demonstration reproduces the current 2 m hackathon design: adaptive-midpoint.
     mirror = ArcMirror(
-        diameter=200.0,
+        diameter=2000.0,
         f_number=1.5,
-        n_rings=32,
+        n_rings=98,
         adaptive=True,
         wall_thickness=2.0,
-        matching="left",
+        matching="midpoint",
     )
 
-    # Validate the canonical member.
+    # Validate the selected hackathon design.
     mirror.validate()
 
     # Display the four computational family members.
@@ -1092,7 +1092,7 @@ if __name__ == "__main__":
             f" | max ray {q['max_ray']:.5f} arcmin"
         )
 
-    # Full report for the canonical adaptive-left member.
+    # Full report for the selected adaptive-midpoint member.
     mirror.print_report()
 
     # Quick physical spot check (seeded for reproducibility)
