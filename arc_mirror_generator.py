@@ -1069,7 +1069,7 @@ if __name__ == "__main__":
         f_number=1.5,
         n_rings=98,
         adaptive=True,
-        wall_thickness=2.0,
+        wall_thickness=20.0,
         matching="midpoint",
     )
 
